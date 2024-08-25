@@ -1,0 +1,38 @@
+.hidden {
+    display: none;
+}
+
+.farmNode {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: rgb(252, 206, 120);
+}
+
+.sel {
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(100, 204, 155);
+}
+
+.wheat {
+    background-color: rgb(252, 206, 120);
+}
+
+.empty {
+    background-color: rgb(97, 67, 60);
+}
+
+:root {
+    --size: 3;
+}
+
+#nodeContainer {
+    display: grid;
+    grid-template-columns: repeat(var(--size), 0fr);
+    gap: 0;
+}
+
+button {
+    margin: 0%;
+}

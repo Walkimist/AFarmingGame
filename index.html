@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Farming Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <h1>A Farming Game</h1>
+    <p>
+        Wheat: <span id="wheatAmount">0</span>
+        <t><button onclick="sell()">Sell</button> - $<span id="sellValue">0</span> / Wheat</t>
+    </p>
+    <p id="moneyDisplay" class="hidden">Money: $ <span id="moneyAmount">0</span></p>
+
+    <p id="tokenDisplay" class="hidden">Tokens: Ŧ <span id="tokenAmount">0</span></p>
+
+    <div id="nodeContainer"></div>
+
+    <br>
+
+    <div class="upgrades">
+
+        <div id="moneyUpgradesDisplay" class="moneyUpgrades hidden">
+            <t><button onclick="increaseSpeed()">Speed +</button> Cost: $ <span id="speedIncreaseCost">0</span></t>
+            <t id="sizeIncreaseDisplay" class="hidden"><button onclick="increaseSize()">Size +</button> Cost: $ <span
+                    id="sizeIncreaseCost">0</span></t>
+        </div>
+
+        <br>
+
+        <div id="tokenUpgradesDisplay" class="tokenUpgrades hidden">
+            <t><button onclick="increaseTokenChance()">Tokens +</button> Cost: Ŧ
+                <span id="tokenChanceCost">0</span>
+            </t>
+            <t id="regrowChanceDisplay" class="hidden">
+                <button onclick="increaseRegrowChance()">Regrow +</button> Cost: Ŧ<span id="regrowChanceCost">0</span>
+            </t>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
